@@ -1,0 +1,120 @@
+/* COMMON CSS STARTS*/
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+list-style: none;
+}
+body{
+    font-family: "arial";
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+/* COMMON CSS ENDS */
+/* MAIN AREA STARTS HERE  */
+.cursorSm {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.2ms;
+    pointer-events: none;
+  }
+  .cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+.faqWrapper .faqContainer{
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+.faqWrapper .faqContainer h2{
+    margin-top: 30px;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+.faq .question{
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 20px;
+  align-items: center;
+  background-color: darkslategray;
+  padding: 20px;
+}
+.faq .question button{
+    background: none;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+.faq.active .question button{
+    transform: rotate(45deg);
+}
+.faq .answer p{
+    line-height: 1.6rem;
+    background-color: rgb(23, 34, 34);
+    padding: 20px;
+}
+.faq .answer{
+    max-height: 0;
+    overflow: hidden;
+}
+.faq.active .answer{
+    max-height: 300px;
+    transition: 1s;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN AREA STARTS HERE  */
